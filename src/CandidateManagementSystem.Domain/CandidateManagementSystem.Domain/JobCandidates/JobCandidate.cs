@@ -25,8 +25,8 @@ public class JobCandidate : Entity
     public DateTime Birth { get; private set; }
     public ContactNumber ContactNumber { get; private set; }
     public Email Email { get; private set; }
-    
-    public HashSet<Skill> Skills { get; private set; }
+
+    public HashSet<Skill> Skills { get; private set; } = new();
     
 
     public static JobCandidate Create(FirstName firstName, LastName lastName, DateTime birth,
