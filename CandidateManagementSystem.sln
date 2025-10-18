@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5F0CD5CF-E867-4D8F-95F5-58BD347A8538}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{1DC25BE0-6CA5-4414-9F40-EAC27CB04D7A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CandidateManagementSystem.Domain", "CandidateManagementSystem.Domain", "{A782A0B1-67F1-4CFF-9557-A475FB8152DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CandidateManagementSystem.Application", "CandidateManagementSystem.Application", "{5D1F0D62-B6BE-4886-96C6-D5E001F33D25}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CandidateManagementSystem.Infrastructure", "CandidateManagementSystem.Infrastructure", "{759444AA-3352-4E7B-990C-1D0BF22A05BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CandidateManagementSystem.Api", "CandidateManagementSystem.Api", "{2D2140FD-92E9-419D-9852-F624D2249CB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandidateManagementSystem.Domain", "src\CandidateManagementSystem.Domain\CandidateManagementSystem.Domain\CandidateManagementSystem.Domain.csproj", "{6C27B3E5-83B9-4475-AECF-808D37A8C731}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandidateManagementSystem.Application", "src\CandidateManagementSystem.Application\CandidateManagementSystem.Application\CandidateManagementSystem.Application.csproj", "{22EC03D7-0A00-43A5-BC4B-5D3CBC6AF613}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandidateManagementSystem.Infrastructure", "src\CandidateManagementSystem.Infrastructure\CandidateManagementSystem.Infrastructure\CandidateManagementSystem.Infrastructure.csproj", "{BB570E30-92CF-4169-AD6D-9CC0D1AA42D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandidateManagementSystem.Api", "src\CandidateManagementSystem.Api\CandidateManagementSystem.Api\CandidateManagementSystem.Api.csproj", "{588FBC14-846B-4329-A46C-027FA9FF443A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C27B3E5-83B9-4475-AECF-808D37A8C731}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C27B3E5-83B9-4475-AECF-808D37A8C731}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C27B3E5-83B9-4475-AECF-808D37A8C731}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C27B3E5-83B9-4475-AECF-808D37A8C731}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22EC03D7-0A00-43A5-BC4B-5D3CBC6AF613}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22EC03D7-0A00-43A5-BC4B-5D3CBC6AF613}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22EC03D7-0A00-43A5-BC4B-5D3CBC6AF613}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22EC03D7-0A00-43A5-BC4B-5D3CBC6AF613}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB570E30-92CF-4169-AD6D-9CC0D1AA42D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB570E30-92CF-4169-AD6D-9CC0D1AA42D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB570E30-92CF-4169-AD6D-9CC0D1AA42D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB570E30-92CF-4169-AD6D-9CC0D1AA42D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{588FBC14-846B-4329-A46C-027FA9FF443A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{588FBC14-846B-4329-A46C-027FA9FF443A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{588FBC14-846B-4329-A46C-027FA9FF443A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{588FBC14-846B-4329-A46C-027FA9FF443A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A782A0B1-67F1-4CFF-9557-A475FB8152DA} = {5F0CD5CF-E867-4D8F-95F5-58BD347A8538}
+		{5D1F0D62-B6BE-4886-96C6-D5E001F33D25} = {5F0CD5CF-E867-4D8F-95F5-58BD347A8538}
+		{759444AA-3352-4E7B-990C-1D0BF22A05BD} = {5F0CD5CF-E867-4D8F-95F5-58BD347A8538}
+		{2D2140FD-92E9-419D-9852-F624D2249CB7} = {5F0CD5CF-E867-4D8F-95F5-58BD347A8538}
+		{6C27B3E5-83B9-4475-AECF-808D37A8C731} = {A782A0B1-67F1-4CFF-9557-A475FB8152DA}
+		{22EC03D7-0A00-43A5-BC4B-5D3CBC6AF613} = {5D1F0D62-B6BE-4886-96C6-D5E001F33D25}
+		{BB570E30-92CF-4169-AD6D-9CC0D1AA42D6} = {759444AA-3352-4E7B-990C-1D0BF22A05BD}
+		{588FBC14-846B-4329-A46C-027FA9FF443A} = {2D2140FD-92E9-419D-9852-F624D2249CB7}
+	EndGlobalSection
+EndGlobal
