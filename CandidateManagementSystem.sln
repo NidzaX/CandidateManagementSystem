@@ -4,21 +4,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5F0CD5CF-E86
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{1DC25BE0-6CA5-4414-9F40-EAC27CB04D7A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CandidateManagementSystem.Domain", "CandidateManagementSystem.Domain", "{A782A0B1-67F1-4CFF-9557-A475FB8152DA}"
+
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1593F353-387B-4206-8C6B-A60CBD8FB70E}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CandidateManagementSystem.Application", "CandidateManagementSystem.Application", "{5D1F0D62-B6BE-4886-96C6-D5E001F33D25}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandidateManagementSystem.Api", "src\CandidateManagementSystem.Api\CandidateManagementSystem.Api.csproj", "{088670F6-0036-4614-AC68-5DD43F31796E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CandidateManagementSystem.Infrastructure", "CandidateManagementSystem.Infrastructure", "{759444AA-3352-4E7B-990C-1D0BF22A05BD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandidateManagementSystem.Application", "src\CandidateManagementSystem.Application\CandidateManagementSystem.Application.csproj", "{DAE44D60-802B-4EE9-9C7B-7069310CC94D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CandidateManagementSystem.Api", "CandidateManagementSystem.Api", "{2D2140FD-92E9-419D-9852-F624D2249CB7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandidateManagementSystem.Domain", "src\CandidateManagementSystem.Domain\CandidateManagementSystem.Domain.csproj", "{9D148931-60E4-4F9B-97F1-B78DC95B4C77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandidateManagementSystem.Domain", "src\CandidateManagementSystem.Domain\CandidateManagementSystem.Domain\CandidateManagementSystem.Domain.csproj", "{6C27B3E5-83B9-4475-AECF-808D37A8C731}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandidateManagementSystem.Application", "src\CandidateManagementSystem.Application\CandidateManagementSystem.Application\CandidateManagementSystem.Application.csproj", "{22EC03D7-0A00-43A5-BC4B-5D3CBC6AF613}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandidateManagementSystem.Infrastructure", "src\CandidateManagementSystem.Infrastructure\CandidateManagementSystem.Infrastructure\CandidateManagementSystem.Infrastructure.csproj", "{BB570E30-92CF-4169-AD6D-9CC0D1AA42D6}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandidateManagementSystem.Api", "src\CandidateManagementSystem.Api\CandidateManagementSystem.Api\CandidateManagementSystem.Api.csproj", "{588FBC14-846B-4329-A46C-027FA9FF443A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandidateManagementSystem.Infrastructure", "src\CandidateManagementSystem.Infrastructure\CandidateManagementSystem.Infrastructure.csproj", "{242C599A-B1A0-4F27-8F62-D0912A58E098}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,15 +40,31 @@ Global
 		{588FBC14-846B-4329-A46C-027FA9FF443A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{588FBC14-846B-4329-A46C-027FA9FF443A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{588FBC14-846B-4329-A46C-027FA9FF443A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{088670F6-0036-4614-AC68-5DD43F31796E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{088670F6-0036-4614-AC68-5DD43F31796E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{088670F6-0036-4614-AC68-5DD43F31796E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{088670F6-0036-4614-AC68-5DD43F31796E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAE44D60-802B-4EE9-9C7B-7069310CC94D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAE44D60-802B-4EE9-9C7B-7069310CC94D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAE44D60-802B-4EE9-9C7B-7069310CC94D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAE44D60-802B-4EE9-9C7B-7069310CC94D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D148931-60E4-4F9B-97F1-B78DC95B4C77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D148931-60E4-4F9B-97F1-B78DC95B4C77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D148931-60E4-4F9B-97F1-B78DC95B4C77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D148931-60E4-4F9B-97F1-B78DC95B4C77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{242C599A-B1A0-4F27-8F62-D0912A58E098}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{242C599A-B1A0-4F27-8F62-D0912A58E098}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{242C599A-B1A0-4F27-8F62-D0912A58E098}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{242C599A-B1A0-4F27-8F62-D0912A58E098}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{A782A0B1-67F1-4CFF-9557-A475FB8152DA} = {5F0CD5CF-E867-4D8F-95F5-58BD347A8538}
-		{5D1F0D62-B6BE-4886-96C6-D5E001F33D25} = {5F0CD5CF-E867-4D8F-95F5-58BD347A8538}
-		{759444AA-3352-4E7B-990C-1D0BF22A05BD} = {5F0CD5CF-E867-4D8F-95F5-58BD347A8538}
-		{2D2140FD-92E9-419D-9852-F624D2249CB7} = {5F0CD5CF-E867-4D8F-95F5-58BD347A8538}
-		{6C27B3E5-83B9-4475-AECF-808D37A8C731} = {A782A0B1-67F1-4CFF-9557-A475FB8152DA}
-		{22EC03D7-0A00-43A5-BC4B-5D3CBC6AF613} = {5D1F0D62-B6BE-4886-96C6-D5E001F33D25}
-		{BB570E30-92CF-4169-AD6D-9CC0D1AA42D6} = {759444AA-3352-4E7B-990C-1D0BF22A05BD}
-		{588FBC14-846B-4329-A46C-027FA9FF443A} = {2D2140FD-92E9-419D-9852-F624D2249CB7}
+		{588FBC14-846B-4329-A46C-027FA9FF443A} = {5F0CD5CF-E867-4D8F-95F5-58BD347A8538}
+		{BB570E30-92CF-4169-AD6D-9CC0D1AA42D6} = {5F0CD5CF-E867-4D8F-95F5-58BD347A8538}
+		{6C27B3E5-83B9-4475-AECF-808D37A8C731} = {5F0CD5CF-E867-4D8F-95F5-58BD347A8538}
+		{22EC03D7-0A00-43A5-BC4B-5D3CBC6AF613} = {5F0CD5CF-E867-4D8F-95F5-58BD347A8538}
+		{088670F6-0036-4614-AC68-5DD43F31796E} = {5F0CD5CF-E867-4D8F-95F5-58BD347A8538}
+		{DAE44D60-802B-4EE9-9C7B-7069310CC94D} = {5F0CD5CF-E867-4D8F-95F5-58BD347A8538}
+		{9D148931-60E4-4F9B-97F1-B78DC95B4C77} = {5F0CD5CF-E867-4D8F-95F5-58BD347A8538}
+		{242C599A-B1A0-4F27-8F62-D0912A58E098} = {5F0CD5CF-E867-4D8F-95F5-58BD347A8538}
 	EndGlobalSection
 EndGlobal

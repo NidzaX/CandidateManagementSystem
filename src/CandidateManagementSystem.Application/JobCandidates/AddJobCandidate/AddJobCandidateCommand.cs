@@ -1,4 +1,3 @@
-using System.Runtime.InteropServices.JavaScript;
 using CandidateManagementSystem.Application.Abstractions.Messaging;
 
 namespace CandidateManagementSystem.Application.JobCandidates.AddJobCandidate;

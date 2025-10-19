@@ -1,0 +1,7 @@
+﻿services:
+  candidatemanagementsystem.api:
+    image: candidatemanagementsystem.api
+    build:
+      context: .
+      dockerfile: src/CandidateManagementSystem.Api/CandidateManagementSystem.Api/Dockerfile
+
