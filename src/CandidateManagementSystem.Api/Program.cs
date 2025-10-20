@@ -12,6 +12,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
 
+builder.Services.AddScoped<DataSeeder>();
+
 WebApplication app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -20,6 +22,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
     
     app.ApplyMigrations();
+
+    using (IServiceScope scope = app.Services.CreateScope())
+    {
+        DataSeeder seeder = scope.ServiceProvider.GetRequiredService<DataSeeder>();
+        await seeder.SeedAsync();
+    }
 }
 
 app.UseHttpsRedirection();
