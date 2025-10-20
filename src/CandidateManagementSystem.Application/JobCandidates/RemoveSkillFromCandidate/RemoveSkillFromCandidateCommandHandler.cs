@@ -5,13 +5,13 @@ using CandidateManagementSystem.Domain.Skills;
 
 namespace CandidateManagementSystem.Application.JobCandidates.RemoveSkillFromCandidate;
 
-internal sealed class RemoveSkillFromCandidateHandler : ICommandHandler<RemoveSkillFromCandidateCommand, Guid>
+internal sealed class RemoveSkillFromCandidateCommandHandler : ICommandHandler<RemoveSkillFromCandidateCommand, Guid>
 {
     private readonly IJobCandidateRepository _jobCandidateRepository;
     private readonly ISkillRepository _skillRepository;
     private readonly IUnitOfWork _unitOfWork;
 
-    public RemoveSkillFromCandidateHandler(
+    public RemoveSkillFromCandidateCommandHandler(
         IJobCandidateRepository jobCandidateRepository,
         ISkillRepository skillRepository,
         IUnitOfWork unitOfWork)
