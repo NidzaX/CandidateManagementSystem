@@ -13,7 +13,7 @@ internal abstract class Repository<T>
         DbContext = dbContext;
     }
 
-    public async Task<T?> GetByIdAsync(
+    public virtual async Task<T?> GetByIdAsync(
         Guid id,
         CancellationToken cancellationToken = default)
     {
@@ -25,5 +25,10 @@ internal abstract class Repository<T>
     public virtual void Add(T entity)
     {
         DbContext.Add(entity);
+    }
+
+    public virtual void Remove(T entity)
+    {
+        DbContext.Remove(entity);
     }
 }

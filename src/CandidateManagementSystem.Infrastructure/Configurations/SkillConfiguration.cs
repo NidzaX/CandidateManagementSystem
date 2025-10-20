@@ -17,6 +17,6 @@ internal sealed class SkillConfiguration : IEntityTypeConfiguration<Skill>
             .HasConversion(name => name.Value, value => new Name(value))
             .IsRequired();
 
-        builder.HasIndex("Name").IsUnique();
+        builder.HasIndex(skill => skill.Name).IsUnique();
     }
 }

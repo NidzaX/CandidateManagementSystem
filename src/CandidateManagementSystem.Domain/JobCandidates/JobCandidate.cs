@@ -27,8 +27,35 @@ public class JobCandidate : Entity
     public Email Email { get; private set; }
 
     public HashSet<Skill> Skills { get; private set; } = new();
-    
 
+    public void UpdatePersonalInfo(
+        FirstName firstName,
+        LastName lastName,
+        DateTime birth,
+        ContactNumber contactNumber,
+        Email email)
+    {
+        FirstName = firstName;
+        LastName = lastName;
+        Birth = birth;
+        ContactNumber = contactNumber;
+        Email = email;
+    }
+
+    public void UpdateSkills(IEnumerable<Skill> skills)
+    {
+        if (skills == null || !skills.Any())
+        {
+            throw new InvalidOperationException("Candidate must have at least one skill");
+        }
+        
+        Skills.Clear();
+        foreach (Skill skill in skills)
+        {
+            Skills.Add(skill);
+        }
+    }
+    
     public static JobCandidate Create(FirstName firstName, LastName lastName, DateTime birth,
         ContactNumber contactNumber, Email email)
     {
@@ -38,4 +65,4 @@ public class JobCandidate : Entity
         
         return jobCandidate;
     }
-}
+} 

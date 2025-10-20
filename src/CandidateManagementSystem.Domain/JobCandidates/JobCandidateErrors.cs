@@ -8,7 +8,17 @@ public static class JobCandidateErrors
         "JobCandidate.Found",
         "The job candidate with the specified identifier was not found.");
 
-    public static Error InvalidCredentials = new(
-        "JobCandidate.InvalidCredentials",
-        "The provided credentials were invalid");
+    public static Error NotAssociated = new(
+        "JobCandidate.NotAssociated",
+        "This skill is not associated with the candidate");
+
+    public static Error SkillsRequired = new(
+        "JobCandidate.SkillsRequired",
+        "Candidate must have at least one skill");
+    
+    public static Error SkillAlreadyAdded = new(
+        "JobCandidate.SkillAlreadyAdded",
+        "This skill is already associated with the candidate");
+    
+    
 }
